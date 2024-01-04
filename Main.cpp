@@ -1,6 +1,14 @@
 
 #include <iostream>
 
+int main();
+
+int MainMenu();
+int Addition(); 
+int Subtraction();
+int Multiplication();
+int Division(); 
+
 int main()
 {
     int val1, val2, choice;
@@ -10,47 +18,19 @@ int main()
     {
         do
         {
-            std::cout
-                << "***Please Select for Math Solution to use ***\n"
-                << "1 Add\n"
-                << "2 Subtraction\n"
-                << "3 Multiplcation\n"
-                << "4 Division\n" 
-                << "\n"
-                << "Enter Choice: ";
-            std::cin >> choice;
-
-            std::system("cls");
-
             switch (choice)
             {
             case 1:
-                std::cout << "Please input value 1:";
-                std::cin >> val1;
-                std::cout << "Please input value 2:";
-                std::cin >> val2;
-                std::cout << val1 << " + " << val2 << " = " << val1 + val2 << "\n";
+                Addition();
                 break;
             case 2:
-                std::cout << "Please input value 1:";
-                std::cin >> val1;
-                std::cout << "Please input value 2:";
-                std::cin >> val2;
-                std::cout << val1 << " - " << val2 << " = " << val1 - val2 << "\n";
+                Subtraction();
                 break;
             case 3:
-                std::cout << "Please input value 1:";
-                std::cin >> val1;
-                std::cout << "Please input value 2:";
-                std::cin >> val2;
-                std::cout << val1 << " * " << val2 << " = " << val1 * val2 << "\n";
+                Multiplication();
                 break;
             case 4:
-                std::cout << "Please input value 1:";
-                std::cin >> val1;
-                std::cout << "Please input value 2:";
-                std::cin >> val2;
-                std::cout << val1 << " / " << val2 << " = " << val1 / val2 << "\n";
+                Division();
                 break; 
 
             default:
@@ -66,3 +46,68 @@ int main()
 
     } while (continueChoice == 'y');
 }
+
+int MainMenu()
+{    
+    int val1, val2;
+    int choice;
+      std::cout
+                << "***Please Select for Math Solution to use ***\n"
+                << "1 Add\n"
+                << "2 Subtraction\n"
+                << "3 Multiplcation\n"
+                << "4 Division\n" 
+                << "\n"
+                << "Enter Choice: ";
+            std::cin >> choice;
+
+            std::system("cls"); 
+
+            return choice;
+             
+}
+
+int Addition()
+{  
+    int val1, val2;
+    int choice;
+         std::cout << "Please input value 1:";
+         std::cin >> val1;
+         std::cout << "Please input value 2:";
+         std::cin >> val2;
+         std::cout << val1 << " + " << val2 << " = " << val1 + val2 << "\n";
+          
+         
+}
+
+int Subtraction()
+{ 
+    int val1, val2;
+    std::cout << "Please input value 1:";
+    std::cin >> val1;
+    std::cout << "Please input value 2:";
+    std::cin >> val2;
+    std::cout << val1 << " - " << val2 << " = " << val1 - val2 << "\n";
+}
+
+int Multiplication()
+{ 
+    int val1, val2;
+    std::cout << "Please input value 1:";
+    std::cin >> val1;
+    std::cout << "Please input value 2:";
+    std::cin >> val2;
+    std::cout << val1 << " * " << val2 << " = " << val1 * val2 << "\n";
+}
+
+int Division()
+{ 
+    int val1, val2;
+    std::cout << "Please input value 1:";
+    std::cin >> val1;
+    std::cout << "Please input value 2:";
+    std::cin >> val2;
+    std::cout << val1 << " / " << val2 << " = " << val1 / val2 << "\n";
+}
+
+

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Simulator</title>
+    <link rel="stylesheet" href="Borja_tsa7.css"> 
+    <script src="Borja_tsa7.js"></script>
+</head>
+
+<body>
+    <div class="controls">
+        <button id="resetBtn">Reset Flexbox</button>
+        <div>
+            <label for="gap">Gap</label>
+            <input type="number" min="0" id="gap" value="0">
+        </div>
+        <div>
+            <label for="flexDirection">Flex Direction</label>
+            <select id="flexDirection">
+                <option value="row">Row</option>
+                <option value="column">Column</option>
+            </select>
+        </div>
+        <div>
+            <label for="justifyContent">Justify Content</label>
+            <select id="justifyContent">
+                <option value="flex-start">Start</option>
+                <option value="center">Center</option>
+                <option value="space-between">Space Between</option>
+                <option value="space-around">Space Around</option>
+                <option value="space-evenly">Space Evenly</option>
+            </select>
+        </div>
+        <div>
+            <label for="alignItems">Align Items</label>
+            <select id="alignItems">
+                <option value="flex-start">Start</option>
+                <option value="center">Center</option>
+                <option value="flex-end">End</option>
+            </select>
+        </div>
+        <div>
+            <label for="flexGrow1">Flex Grow Box 1</label>
+            <input type="number" min="0" id="flexGrow1" value="0">
+        </div>
+        <div>
+            <label for="flexGrow2">Flex Grow Box 2</label>
+            <input type="number" min="0" id="flexGrow2" value="0">
+        </div>
+        <div>
+            <label for="flexGrow3">Flex Grow Box 3</label>
+            <input type="number" min="0" id="flexGrow3" value="0">
+        </div>
+    </div>
+    <div class="flex-container" id="flexContainer">
+        <div class="flex-item" id="box1">1</div>
+        <div class="flex-item" id="box2">2</div>
+        <div class="flex-item" id="box3">3</div>
+    </div>
+</body>
+
+</html>
